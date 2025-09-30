@@ -10,8 +10,8 @@ import About from "./pages/About/About.jsx";
 import Clothess from "./pages/clothes/clothess.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
 import Cart from "./pages/Cart/Cart.jsx";
-import LoginPage from "./components/common/LoginPage/login.jsx";
-import SignupPage from "./components/common/LoginPage/register/Register.jsx";
+import LoginPage from "./components/common/LoginPage/login/login.jsx";
+import SignupPage from "./components/common/LoginPage/Register/register.jsx";
 import PlaceOrder from "./pages/PlaceOrder/PlaceOrder.jsx";
 
 import { Toaster } from "react-hot-toast";
