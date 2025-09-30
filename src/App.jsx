@@ -8,7 +8,7 @@ import Navbar from "./components/common/Navbar/Navbar";
 import Home from "./pages/Home/Home.jsx";
 import About from "./pages/About/About.jsx";
 // Import the “Clothess” page from pages (assuming that file lives in src/pages/clothes/Clothess.jsx)
-import Clothess from "./pages/clothes/Clothess.jsx";
+import Clothess from "./pages/clothes/Clothess";
 import Contact from "./pages/Contact/Contact.jsx";
 import Cart from "./pages/Cart/Cart.jsx";
 import LoginPage from "./components/common/LoginPage/login/login.jsx";
