@@ -1,0 +1,170 @@
+.cart-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.cart-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.cart-empty {
+  font-size: 1.2rem;
+  color: #777;
+  text-align: center;
+}
+
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 12px 0;
+  flex-wrap: wrap;
+}
+
+.cart-item-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+}
+
+.cart-item img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-item-details h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.cart-item-details p {
+  margin: 4px 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-controls button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.quantity-controls button:hover {
+  background-color: #1e40af;
+}
+
+.quantity-controls span {
+  font-weight: bold;
+  font-size: 1rem;
+  min-width: 24px;
+  text-align: center;
+}
+
+.cart-summary {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 2px solid #ddd;
+}
+
+.cart-summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.cart-summary-row.grand {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.checkout-btn {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.checkout-btn:hover {
+  background-color: #0004eecc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-item-left {
+    width: 100%;
+  }
+
+  .quantity-controls {
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+
+  .cart-summary-row {
+    font-size: 1rem;
+  }
+
+  .checkout-btn {
+    font-size: 1rem;
+  }
+}
+
+.delete-btn {
+  background-color: #ff4d4d; /* red background */
+  color: white;             /* white trash icon */
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #e60000; /* darker red */
+  transform: scale(1.1);
+}
+
+.delete-btn:active {
+  background-color: #cc0000; /* pressed effect */
+  transform: scale(0.95);
+}

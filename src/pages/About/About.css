@@ -1,0 +1,30 @@
+.hero-slider-container {
+  position: relative;
+  width: 100%;
+  height: 600px; /* adjust as needed */
+  overflow: hidden;
+}
+
+.mySwiper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-hero {
+  margin-top: 30px;
+  padding: 20px;
+  text-align: center;
+  color: rgb(227, 21, 21);
+}
+
+
+.about-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}

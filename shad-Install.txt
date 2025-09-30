@@ -1,0 +1,31 @@
+1. npm create vite@latest
+2. npm install tailwindcss @tailwindcss/vite
+3. index.css --> @import "tailwindcss";
+4. jsconfig.json -->   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+
+5. vite.config.js -->
+import { fileURLToPath } from "url";
+import { dirname, resolve } from "path";
+import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
+import { defineConfig } from "vite";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+  resolve: {
+    alias: {
+      "@": resolve(__dirname, "src"),
+    },
+  },
+});
+
+6. npx shadcn@latest init
+7. npx shadcn@latest add {component-name}

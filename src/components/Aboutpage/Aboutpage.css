@@ -1,0 +1,389 @@
+/* Container */
+.about-container {
+  padding: 50px 20px;
+  background: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  overflow: hidden;
+}
+
+/* Breadcrumb */
+.about-header {
+  height: 250px;
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  /* margin-bottom: 40px; */
+  margin-top: -25px;
+  position: relative;
+  overflow: hidden;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.about-header::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2), transparent 60%);
+  animation: pulse 6s infinite linear;
+}
+
+@keyframes pulse {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.breadcrumb {
+  margin: auto;
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.breadcrumb-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.breadcrumb-link:hover {
+  color: #1123e6;
+  transform: translateY(-2px);
+}
+
+.breadcrumb-separator {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.breadcrumb-current {
+  color: #f1f1f1;
+  font-weight: 700;
+}
+
+section {
+  padding: 80px 10%;
+  position: relative;
+}
+
+/* 🌟 Hero Section */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 10%;
+  background: linear-gradient(120deg, #f9fafc, #e3f2fd);
+  min-height: -30vh;
+  gap: 50px;
+}
+
+.hero-text {
+  flex: 1;
+  animation: fadeInLeft 1.2s ease;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  max-width: 500px;
+  color: #555;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  animation: fadeInRight 1.2s ease;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+
+/* 🌟 Mission & Services Section */
+.mission-card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.mission-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.mission-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.mission-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.mission-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.mission-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* 🌟 Owner Section */
+.owner-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.owner-info {
+  flex: 1;
+}
+
+.owner-info h2 {
+  font-size: 2rem;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.owner-info h3 {
+  font-size: 1.4rem;
+  color: #1976d2;
+  margin-bottom: 20px;
+}
+
+.owner-info p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.owner-cta {
+  display: inline-block;
+  background: #1976d2;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.owner-cta:hover {
+  background: #0d47a1;
+}
+
+.owner-photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.owner-photo img {
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease;
+}
+
+.owner-photo img:hover {
+  transform: scale(1.08);
+}
+
+/* 🌟 Team Section */
+.team-section {
+  text-align: center;
+  padding: 80px 20px;
+  background: #f0f4f8; /* subtle background color */
+  position: relative;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  margin-bottom: 60px;
+  color: #0d1b2a;
+  font-weight: 700;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background: #1976d2;
+  display: block;
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-card {
+  background: linear-gradient(135deg, #ffffff, #f9faff);
+  padding: 30px 20px;
+  border-radius: 25px;
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.team-card::before {
+  content: '';
+  position: absolute;
+  width: 120%;
+  height: 0;
+  background: rgba(25, 118, 210, 0.08);
+  top: 0;
+  left: -10%;
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+  z-index: 0;
+}
+
+.team-card:hover::before {
+  height: 300%;
+}
+
+.team-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.team-photo {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+.team-photo img {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border: 4px solid #1976d2;
+  transition: transform 0.4s ease;
+}
+
+.team-card:hover .team-photo img {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.team-name {
+  font-size: 1.3rem;
+  color: #0d1b2a;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.team-role {
+  font-size: 1rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.team-socials {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.team-socials a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #1976d2;
+  transition: transform 0.3s ease;
+}
+
+.team-socials a:hover {
+  transform: scale(1.3);
+}
+
+
+/* 🌟 Animations */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 🌟 Responsive Design */
+@media (max-width: 992px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .owner-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .owner-photo img {
+    margin-top: 20px;
+  }
+}

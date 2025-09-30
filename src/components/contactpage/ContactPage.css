@@ -1,0 +1,217 @@
+/* Global Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(120deg, #e0eafc, #cfdef3);
+  margin: 0;
+  padding: 0;
+  color: #111;
+}
+
+/* Breadcrumb Header */
+.contact-header {
+  height: 250px;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 25px 25px;
+  /* margin-bottom: 60px; */
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.contact-header::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.2), transparent 60%);
+  animation: pulse 6s infinite linear;
+}
+
+@keyframes pulse {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
+
+.breadcrumb {
+  font-size: 1.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  z-index: 2;
+}
+
+.breadcrumb-link {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.breadcrumb-link:hover {
+  color: #1123e6;
+  transform: scale(1.05);
+}
+
+.breadcrumb-separator {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.breadcrumb-current {
+  color: #f1f1f1;
+  font-weight: 700;
+}
+
+/* Contact Layout */
+.contact-wrapper {
+  padding: 60px 20px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: stretch;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+/* Left Section */
+.contact-left h2 {
+  margin-bottom: 15px;
+  color: #0f172a;
+  font-size: 2rem;
+}
+
+.contact-left p {
+  font-size: 15px;
+  margin-bottom: 25px;
+  color: #444;
+}
+
+.contact-detail h4 {
+  margin: 12px 0 5px;
+  font-size: 16px;
+  color: #111827;
+}
+
+.contact-detail p {
+  margin-bottom: 12px;
+  color: #555;
+  font-size: 14px;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 220px;
+  border-radius: 12px;
+  margin-top: 20px;
+  border: none;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* Right Form */
+.contact-right h2 {
+  margin-bottom: 25px;
+  color: #0f172a;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 14px;
+  font-size: 15px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: rgba(255,255,255,0.5);
+  border-radius: 10px;
+  color: #111;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #4facfe;
+  box-shadow: 0 0 12px rgba(79, 172, 254, 0.4);
+}
+
+.input-group label {
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  font-size: 14px;
+  color: #666;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group textarea:focus + label,
+.input-group textarea:not(:placeholder-shown) + label {
+  top: -8px;
+  font-size: 12px;
+  background: white;
+  padding: 0 6px;
+  border-radius: 4px;
+  color: #4facfe;
+}
+
+/* Submit Button */
+.submit-btn {
+  padding: 16px;
+  border: none;
+  font-size: 16px;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 600;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #00f2fe, #4facfe);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}

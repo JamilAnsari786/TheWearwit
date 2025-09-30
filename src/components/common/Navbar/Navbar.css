@@ -1,0 +1,159 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 12px 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  flex-wrap: nowrap; /* ✅ Ensure everything stays in one line */
+  overflow-x: auto;   /* ✅ Allow horizontal scroll if needed */
+}
+
+
+/* Logo */
+.logo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-left: 100px;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 45px;
+  list-style: none;
+  font-size: 25px;
+  flex: 1;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: color 0.3s;
+  /* margin-left: 10p; */
+}
+
+.nav-links li:hover {
+  color: #007bff;
+}
+
+/* Right side (Cart and Login) */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.cart {
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+}
+
+.login button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 23px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 100px;
+}
+
+.login button:hover {
+  background-color: #0056b3;
+}
+/* Default styles already in row layout */
+
+/* Devices ≤ 1024px */
+@media (max-width: 1024px) {
+  .logo img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .nav-links {
+    font-size: 20px;
+    gap: 25px;
+  }
+
+  .login button {
+    font-size: 18px;
+    padding: 6px 12px;
+  }
+
+  .cart {
+    font-size: 24px;
+  }
+}
+
+/* Devices ≤ 768px */
+/* Devices ≤ 768px */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 8px 12px; /* Reduced padding */
+  }
+
+  .logo img {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+  }
+
+  .nav-links {
+    font-size: 14px;
+    gap: 15px;
+  }
+
+  .cart {
+    font-size: 20px;
+  }
+
+  .login button {
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-right: 10px;
+  }
+}
+
+
+/* Devices ≤ 480px */
+@media (max-width: 480px) {
+  .logo img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .nav-links {
+    font-size: 14px;
+    gap: 10px;
+  }
+
+  .login button {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+
+  .cart {
+    font-size: 18px;
+  }
+
+  .nav-right {
+    gap: 8px;
+  }
+}
+
+
