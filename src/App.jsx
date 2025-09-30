@@ -5,15 +5,15 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/common/Navbar/Navbar";
 
 // Pages
-import Home from "./pages/Home/Home";
-import About from "./pages/About/About";
+import Home from "./pages/Home/Home.jsx";
+import About from "./pages/About/About.jsx";
 // Import the “Clothess” page from pages (assuming that file lives in src/pages/clothes/Clothess.jsx)
-import Clothess from "./pages/clothes/Clothess";
-import Contact from "./pages/Contact/Contact";
-import Cart from "./pages/Cart/Cart";
-import LoginPage from "./components/common/LoginPage/login/Login";
-import SignupPage from "./components/common/LoginPage/Register/Register";
-import PlaceOrder from "./pages/PlaceOrder/PlaceOrder";
+import Clothess from "./pages/clothes/Clothess.jsx";
+import Contact from "./pages/Contact/Contact.jsx";
+import Cart from "./pages/Cart/Cart.jsx";
+import LoginPage from "./components/common/LoginPage/login/login.jsx";
+import SignupPage from "./components/common/LoginPage/Register/Register.jsx";
+import PlaceOrder from "./pages/PlaceOrder/PlaceOrder.jsx";
 
 import { Toaster } from "react-hot-toast";
 
